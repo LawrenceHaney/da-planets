@@ -6,7 +6,6 @@ const Planet = new Schema(
   {
     name: {type:String, required: true},
     star: {type: ObjectId, ref: "Star"},
-    moon: [{type: ObjectId, ref:"Moon"}],
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );
